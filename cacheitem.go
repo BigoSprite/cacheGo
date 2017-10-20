@@ -32,40 +32,37 @@ type CacheItem struct {
 }
 
 func (item *CacheItem) Key() interface{} {
-	item.RLock()
-	defer item.Unlock()
-
+	// immutable
 	return item.key
 }
 
 func (item *CacheItem) Data() interface{} {
-	item.RLock()
-	defer item.Unlock()
-
+	// immutable
 	return item.data
 }
 
 func (item *CacheItem) LifeSpan() time.Duration {
+	// immutable
 	return item.lifeSpan
 }
 
-func (item *CacheItem) CreateOn() time.Time {
-	item.RLock()
-	defer item.Unlock()
-
+func (item *CacheItem) CreatedOn() time.Time {
+	// immutable
 	return item.createdOn
 }
 
-func (item *CacheItem) AccessOn() time.Time {
+func (item *CacheItem) AccessedOn() time.Time {
+	// Because accessedOn is mutable, lock it before reading.
 	item.RLock()
-	defer item.Unlock()
+	defer item.RUnlock()
 
 	return item.accessedOn
 }
 
 func (item *CacheItem) AccessCount() int64 {
+	// Because accessCount is mutable, lock it before reading.
 	item.RLock()
-	defer item.Unlock()
+	defer item.RUnlock()
 
 	return item.accessCount
 }
