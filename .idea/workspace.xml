@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="490aadb4-9c93-4413-9937-4007348da808" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/mycachedapp.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cachetable.go" afterPath="$PROJECT_DIR$/cachetable.go" />
     </list>
@@ -14,40 +15,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="cachetable.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cachetable.go">
+      <file leaf-file-name="mycachedapp.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/mycachedapp.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="138">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
-                <element signature="e#17#50#0" expanded="true" />
-                <element signature="n#!!block;n#Foreach#0" expanded="false" />
-                <element signature="n#!!block;n#SetDataLoader#0" expanded="false" />
-                <element signature="n#!!block;n#SetAddedItemCallback#0" expanded="false" />
-                <element signature="n#!!block;n#SetAboutToDeleteItemCallback#0" expanded="false" />
-                <element signature="n#!!block;n#SetLogger#0" expanded="false" />
-                <element signature="n#!!block;n#expirationCheck#0" expanded="false" />
-                <element signature="n#!!block;n#addInternal#0" expanded="false" />
-                <element signature="n#!!block;n#Add#0" expanded="false" />
-                <element signature="n#!!block;n#deleteInternal#0" expanded="false" />
-                <element signature="n#!!block;n#Delete#0" expanded="false" />
-                <element signature="n#!!block;n#Exists#0" expanded="false" />
-                <element signature="n#!!block;n#Value#0" expanded="false" />
-                <element signature="n#!!block;n#Flush#0" expanded="false" />
-                <element signature="n#!!block;n#log#0" expanded="false" />
+                <element signature="e#14#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cache.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cache.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cache.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <element signature="e#17#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,6 +48,11 @@
   </component>
   <component name="GOROOT" path="/usr/local/lib/go" />
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="bigosprite &lt;bigosprite&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -71,8 +61,10 @@
         <option value="$PROJECT_DIR$/Errors.go" />
         <option value="$PROJECT_DIR$/errors.go" />
         <option value="$PROJECT_DIR$/cacheitem.go" />
-        <option value="$PROJECT_DIR$/cachetable.go" />
         <option value="$PROJECT_DIR$/cache.go" />
+        <option value="$PROJECT_DIR$/cachetable.go" />
+        <option value="$PROJECT_DIR$/mycachedapp.go" />
+        <option value="$PROJECT_DIR$/examples/mycachedapp.go" />
       </list>
     </option>
   </component>
@@ -83,8 +75,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="604" />
-    <option name="y" value="37" />
+    <option name="x" value="564" />
+    <option name="y" value="142" />
     <option name="width" value="1392" />
     <option name="height" value="874" />
   </component>
@@ -124,7 +116,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-    <property name="GO_FMT" value="false" />
+    <property name="GO_FMT" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,7 +187,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加了注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了注释" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -220,73 +213,89 @@
         <state relative-caret-position="96">
           <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding>
-            <element signature="e#17#50#0" expanded="true" />
+            <element signature="e#17#58#0" expanded="true" />
+            <element signature="n#!!block;n#Count#0" expanded="false" />
             <element signature="n#!!block;n#Foreach#0" expanded="false" />
+            <element signature="n#!!block;n#expirationCheck#0" expanded="false" />
+            <element signature="n#!!block;n#addInternal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteInternal#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="n#!!block;n#Exists#0" expanded="false" />
+            <element signature="n#!!block;n#NotFoundAdd#0" expanded="false" />
+            <element signature="n#!!block;n#Value#0" expanded="false" />
             <element signature="n#!!block;n#SetDataLoader#0" expanded="false" />
             <element signature="n#!!block;n#SetAddedItemCallback#0" expanded="false" />
             <element signature="n#!!block;n#SetAboutToDeleteItemCallback#0" expanded="false" />
             <element signature="n#!!block;n#SetLogger#0" expanded="false" />
-            <element signature="n#!!block;n#expirationCheck#0" expanded="false" />
-            <element signature="n#!!block;n#addInternal#0" expanded="false" />
-            <element signature="n#!!block;n#Add#0" expanded="false" />
-            <element signature="n#!!block;n#deleteInternal#0" expanded="false" />
-            <element signature="n#!!block;n#Delete#0" expanded="false" />
-            <element signature="n#!!block;n#Exists#0" expanded="false" />
-            <element signature="n#!!block;n#Value#0" expanded="false" />
             <element signature="n#!!block;n#Flush#0" expanded="false" />
+            <element signature="n#!!block;n#Swap#0" expanded="false" />
+            <element signature="n#!!block;n#Len#0" expanded="false" />
+            <element signature="n#!!block;n#MostAccessed#0" expanded="false" />
             <element signature="n#!!block;n#log#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Errors.go" />
-    <entry file="file:///usr/local/lib/go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="181" column="5" lean-forward="false" selection-start-line="181" selection-start-column="5" selection-end-line="181" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/errors.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding>
-            <element signature="e#17#37#0" expanded="true" />
+            <element signature="e#17#37#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="133" column="5" lean-forward="false" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cacheitem.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="1066">
+          <caret line="93" column="23" lean-forward="false" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
           <folding>
             <element signature="e#17#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mycachedapp.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cachetable.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="220">
+          <caret line="128" column="25" lean-forward="false" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
           <folding>
-            <element signature="e#17#50#0" expanded="true" />
+            <element signature="e#17#58#0" expanded="true" />
+            <element signature="n#!!block;n#Count#0" expanded="false" />
             <element signature="n#!!block;n#Foreach#0" expanded="false" />
+            <element signature="n#!!block;n#expirationCheck#0" expanded="false" />
+            <element signature="n#!!block;n#addInternal#0" expanded="false" />
+            <element signature="n#!!block;n#deleteInternal#0" expanded="false" />
+            <element signature="n#!!block;n#Delete#0" expanded="false" />
+            <element signature="n#!!block;n#Exists#0" expanded="false" />
+            <element signature="n#!!block;n#NotFoundAdd#0" expanded="false" />
+            <element signature="n#!!block;n#Value#0" expanded="false" />
             <element signature="n#!!block;n#SetDataLoader#0" expanded="false" />
             <element signature="n#!!block;n#SetAddedItemCallback#0" expanded="false" />
             <element signature="n#!!block;n#SetAboutToDeleteItemCallback#0" expanded="false" />
             <element signature="n#!!block;n#SetLogger#0" expanded="false" />
-            <element signature="n#!!block;n#expirationCheck#0" expanded="false" />
-            <element signature="n#!!block;n#addInternal#0" expanded="false" />
-            <element signature="n#!!block;n#Add#0" expanded="false" />
-            <element signature="n#!!block;n#deleteInternal#0" expanded="false" />
-            <element signature="n#!!block;n#Delete#0" expanded="false" />
-            <element signature="n#!!block;n#Exists#0" expanded="false" />
-            <element signature="n#!!block;n#Value#0" expanded="false" />
             <element signature="n#!!block;n#Flush#0" expanded="false" />
+            <element signature="n#!!block;n#Swap#0" expanded="false" />
+            <element signature="n#!!block;n#Len#0" expanded="false" />
+            <element signature="n#!!block;n#MostAccessed#0" expanded="false" />
             <element signature="n#!!block;n#log#0" expanded="false" />
           </folding>
         </state>
@@ -294,10 +303,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cache.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="184">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/mycachedapp.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
-            <element signature="e#17#35#0" expanded="true" />
+            <element signature="e#14#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
