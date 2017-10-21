@@ -8,7 +8,7 @@ cacheGo
 
 安装cacheGo很简单，命令如下：
 
-    go get github.com/muesli/cache2go
+    go get github.com/BigoSprite/cacheGo
 
 从源码编译：
 
