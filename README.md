@@ -82,6 +82,8 @@ func main() {
 
 ## 参考
 
+原作者仓库为：github.com/muesli/cache2go，本项目仅以学习为目的。
+
 API docs can be found [here](http://godoc.org/github.com/muesli/cache2go).
 
 [![Build Status](https://travis-ci.org/muesli/cache2go.svg?branch=master)](https://travis-ci.org/muesli/cache2go)
