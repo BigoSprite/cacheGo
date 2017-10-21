@@ -22,7 +22,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/cacheGo"
+	"github.com/BigoSprite/cacheGo"
 	"time"
 )
 
