@@ -11,15 +11,13 @@ var (
 
 // 返回一张缓存表，如果不存在的话，进行创建
 func Cache(table string) *CacheTable {
-	// Cache returns the existing cache table with given name later.
 	mutex.RLock()
 	t, ok := cache[table]
 	mutex.RUnlock()
 
-	// or create a new one if the table does not exist yet
 	if !ok {
 		mutex.Lock()
-		t, ok := cache[table]
+		t, ok = cache[table]
 		// Double check whether the table exists or not.
 		if !ok {
 			t = &CacheTable{
