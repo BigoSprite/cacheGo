@@ -9,6 +9,7 @@ var (
 	mutex sync.RWMutex
 )
 
+// 返回一张缓存表，如果不存在的话，进行创建
 func Cache(table string) *CacheTable {
 	// Cache returns the existing cache table with given name later.
 	mutex.RLock()

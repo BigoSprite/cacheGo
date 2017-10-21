@@ -8,15 +8,11 @@ import (
 
 type CacheTable struct {
 	sync.RWMutex
-
-	name  string
-	items map[interface{}]*CacheItem
-
-	cleanupTimer    *time.Timer
-	cleanupInterval time.Duration
-
-	logger *log.Logger
-
+	name              string
+	items             map[interface{}]*CacheItem
+	cleanupTimer      *time.Timer
+	cleanupInterval   time.Duration
+	logger            *log.Logger
 	loadData          func(key interface{}, args ...interface{}) *CacheItem
 	addedItem         func(item *CacheItem)
 	aboutToDeleteItem func(item *CacheItem)
